@@ -1,4 +1,4 @@
-<html>
+<html id="parentHTML">
 
   <head>
     <title>My Portfolio</title>
@@ -7,6 +7,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
 />
+    <script defer src="script.js"></script>
   </head>
 
 <!-- about me -->
@@ -68,6 +69,7 @@
         <ul>
           <li>git</li>
           <li>GitHub</li>
+          <li>GitLab</li>
         </ul>
       </details>
 
@@ -137,12 +139,28 @@
           <br>
           <br>
           <li>url : <a href="https://github.com/ysj0828/NodeSystem" target="_blank">GitHub Page</a></li>
-          <li>demo : TODO</li>
+          <li>demo : 
+            <button class="secondary open-button">Open Demo</button>
+          </li>
         </ul>
       </details>
 
     </article>
   </div>
+
+
+<dialog id="modal">
+  <article>
+    <h2>Demo</h2>
+
+    <iframe src="https://ysj0828.github.io/NodeSystem_Demo/" frameborder="0" width="100%" height="300"></iframe>
+    
+    <footer>
+      <button class="secondary close-button">Close Button</button>
+    </footer>
+  </article>
+</dialog>
+
 
   <!-- Career -->
   <div class="container">
