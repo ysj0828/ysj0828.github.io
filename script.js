@@ -9,7 +9,6 @@ openModal.addEventListener('click', () => {
         parent.classList.add('modal-is-opening');
         parent.classList.add('modal-is-open');
         modal.showModal(); 
-        
     }, 200);
 })
 
